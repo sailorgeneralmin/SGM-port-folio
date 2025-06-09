@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <title>
+        Gallery page
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: navy;
+    }
+
+    h1 {
+        display: flex;
+        font-style: italic;
+        margin-left: 15%;
+        width: 100%;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        font: size 7em;
+        color: white;
+    }
+
+    body {
+        background-color: navy;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 15%;
+        width: 100%;
+    }
+    /* Reset some default styles */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #0f2027, #2c5364 80%);
+        color: #fff;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 3em;
+        font-style: italic;
+        margin: 40px 0 20px 0;
+        letter-spacing: 2px;
+        color: #fff;
+        text-shadow: 2px 2px 10px #000a;
+    }
+
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 32px;
+        width: 90vw;
+        max-width: 1200px;
+        margin: 0 auto 40px auto;
+        padding: 20px 0;
+        background: rgba(0,0,0,0.1);
+        border-radius: 20px;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+
+    .product {
+        background: rgba(255,255,255,0.07);
+        border-radius: 16px;
+        box-shadow: 0 4px 24px 0 rgba(0,0,0,0.15);
+        padding: 18px 12px 16px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+        border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .product:hover {
+        transform: translateY(-8px) scale(1.04);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+        background: rgba(255,255,255,0.13);
+    }
+
+    .product img {
+        width: 100%;
+        max-width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 12px;
+        background: #fff;
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+    }
+
+    .product .name {
+        font-size: 1.1em;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 6px;
+        text-align: center;
+        min-height: 32px;
+    }
+
+    .product .price {
+        color: #ffd700;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-top: 4px;
+        letter-spacing: 1px;
+    }
+
+    footer {
+        background: #111;
+        color: #fff;
+        text-align: center;
+        padding: 18px 0 10px 0;
+        width: 100vw;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        box-shadow: 0 -2px 12px 0 rgba(0,0,0,0.25);
+        margin-top: 40px;
+    }
+
+    .f1 {
+        font-style: italic;
+        font-size: 1.2em;
+        color: #ffd700;
+    }
+
+    @media (max-width: 700px) {
+        h1 {
+            font-size: 2em;
+            margin: 24px 0 12px 0;
+        }
+        .product-container {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 18px;
+            padding: 10px 0;
+        }
+        .product img {
+            max-width: 120px;
+            height: 120px;
+        }
+        footer {
+            font-size: 1em;
+            padding: 10px 0 8px 0;
+        }
+    }
+    .header {
+        background-color: black;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+
+    main {
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer {
+        background-color: black;
+        justify-content: center;
+        margin-right: 395px;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .f1 {
+        font-style: italic;
+        font-size: larger;
+    }
+
+
+    .product {
+        width: 150px;
+        text-align: center;
+        margin: 10px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px;
+        color: r,
+            g,
+            b,
+            a('0, 0, 0, 0, 1');
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product.name {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+
+    }
+
+    .product-price {
+        color: black;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .product-container {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 3;
+    }
+
+
+
+    @media only screen and(max-width: 600px) {
+
+        body {
+            background-color: white;
+
+        }
+
+         footer {
+        background-color: black;
+        text-align: center;
+        margin-right: 5px;
+    
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 150%;
+    }
+
+    .f1 {
+        font-style: italic;
+        font-size: larger;
+    }
+
+       
+
+    }
+</style>
+
+<h1> Welcome to my gallery page</h1>
+
+<body>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="images/sgm movers logoo22.png" alt="item 1">
+            <div class="name" product name></div>
+            <div class="price">$15.00</div>
+        </div>
+
+        <div class="product-container">
+            <div class="product">
+                <img src="images/schola ventures logo.png" alt="item 1">
+                <div class="name" product name></div>
+                <div class="price">$15.00</div>
+            </div>
+
+            <div class="product-container">
+                <div class="product">
+                    <img src="images/CHI AUTOS  FLYERS.png" alt="item 1">
+                    <div class="name" product name></div>
+                    <div class="price">$15.00</div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product">
+                        <img src="images/sgm lgtics mover.png" alt="item 1">
+                        <div class="name" product name></div>
+                        <div class="price">$15.00</div>
+                    </div>
+
+                    <div class="product-container">
+                        <div class="product">
+                            <img src="images/GE-MIN LOGO.png" alt="item 1">
+                            <div class="name" product name></div>
+                            <div class="price">$15.00</div>
+                        </div>
+
+                        <div class="product-container">
+                            <div class="product">
+                                <img src="images/ella's treat nw flyers.png" alt="item 1">
+                                <div class="name" product name></div>
+                                <div class="price">$15.00</div>
+                            </div>
+
+                            <div class="product-container">
+                                <div class="product">
+                                    <img src="images/unque mothers club.jpg" alt="item 1">
+                                    <div class="name" product name></div>
+                                    <div class="price">$15.00</div>
+                                </div>
+
+                                <div class="product-container">
+                                    <div class="product">
+                                        <img src="images/diamond ladies.png" alt="item 1">
+                                        <div class="name" product name></div>
+                                        <div class="price">$15.00</div>
+                                    </div>
+
+                                    <div class="product-container">
+                                        <div class="product">
+                                            <img src="images/true love logo 1.jpg" alt="item 1">
+                                            <div class="name" product name></div>
+                                            <div class="price">$15.00</div>
+                                        </div>
+
+                                        <div class="product-container">
+                                            <div class="product">
+                                                <img src="images/true love logo 2.jpg" alt="item 1">
+                                                <div class="name" product name></div>
+                                                <div class="price">$15.00</div>
+                                            </div>
+
+                                            <div class="product-container">
+                                                <div class="product">
+                                                    <img src="images/car for rent social media template.png"
+                                                        alt="item 1">
+                                                    <div class="name" product name></div>
+                                                    <div class="price">$2.00</div>
+                                                </div>
+
+                                                <div class="product-container">
+                                                    <div class="product">
+                                                        <img src="images/shanty AFFAIRS.png" alt="item 1">
+                                                        <div class="name" product name></div>
+                                                        <div class="price">$15.00</div>
+                                                    </div>
+
+                                                    <div class="product-container">
+                                                        <div class="product">
+                                                            <img src="" alt="item 1">
+                                                            <div class="name" product name></div>
+                                                            <div class="price">$15.00</div>
+                                                        </div>
+
+                                                        <div class="product-container">
+                                                        <div class="product">
+                                                                <img src="" alt="item 1">
+                                                                <div class="name" product name></div>
+                                                                <div class="price">$15.00</div>
+                                                            </div>
+
+                                                            <div class="product-container">
+                                                                <div class="product">
+                                                                    <img src="" alt="item 1">
+                                                                    <div class="name" product name></div>
+                                                                    <div class="price">$15.00</div>
+                                                                </div>
+
+                                                                <div class="product-container">
+                                                                    <div class="product">
+                                                                        <img src="" alt="item 1">
+                                                                        <div class="name" product name></div>
+                                                                        <div class="price">$15.00</div>
+                                                                    </div>
+
+                                                                    <div class="product-container">
+                                                                        <div class="product">
+                                                                            <img src="" alt="item 1">
+                                                                            <div class="name" product name></div>
+                                                                            <div class="price">$15.00</div>
+                                                                        </div>
+                                                                        <div class="product-container">
+                                                                            <div class="product">
+                                                                                <img src="images/Ola Football World33.png"
+                                                                                    alt="item 1">
+                                                                                <div class="name" product name></div>
+                                                                                <div class="price">$15.00</div>
+                                                                            </div>
+                                                                            <div class="product-container">
+                                                                                <div class="product">
+                                                                                    <img src="images/tee scents flyer design.png"
+                                                                                        alt="item 1">
+                                                                                    <div class="name" product name>
+                                                                                    </div>
+                                                                                    <div class="price">$15.00</div>
+                                                                                </div>
+
+                                                                                <div class="product-container">
+                                                                                    <div class="product">
+                                                                                        <vid src="images/Design 2.mp4"
+                                                                                            alt="item 1">
+                                                                                            <div class="name" product
+                                                                                                name></div>
+                                                                                            <div class="price">$15.00
+                                                                                            </div>
+                                                                                    </div>
+
+                                                                                    <div class="product-container">
+                                                                                        <div class="product">
+                                                                                            <img src="images/_27961258-d5ee-424c-b77b-10f0117c330a.jpeg"
+                                                                                                alt="item 1">
+                                                                                            <div class="name" product
+                                                                                                name></div>
+                                                                                            <div class="price">$15.00
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="product-container">
+                                                                                            <div class="product">
+                                                                                                <img src="images/_41d63900-395f-487c-8529-122ea89a03dc.jpeg"
+                                                                                                    alt="item 1">
+                                                                                                <div class="name"
+                                                                                                    product name></div>
+                                                                                                <div class="price">
+                                                                                                    $15.00</div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="product-container">
+                                                                                                <div class="product">
+                                                                                                    <img src="images/ready to go cleaning services.png"
+                                                                                                        alt="item 1">
+                                                                                                    <div class="name"
+                                                                                                        product name>
+                                                                                                    </div>
+                                                                                                    <div class="price">
+                                                                                                        $15.00</div>
+                                                                                                </div>
+
+                                                                                                <div
+                                                                                                    class="product-container">
+                                                                                                    <div
+                                                                                                        class="product">
+                                                                                                        <img src=""
+                                                                                                            alt="item 1">
+                                                                                                        <div class="name"
+                                                                                                            product
+                                                                                                            name></div>
+                                                                                                        <div
+                                                                                                            class="price">
+                                                                                                            $15.00</div>
+                                                                                                    </div>
+
+                                                                                                    <div
+                                                                                                        class="product-container">
+                                                                                                        <div
+                                                                                                            class="product">
+                                                                                                            <img src=""
+                                                                                                                alt="item 1">
+                                                                                                            <div class="name"
+                                                                                                                product
+                                                                                                                name>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="price">
+                                                                                                                $15.00
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                        <div
+                                                                                                            class="product-container">
+                                                                                                            <div
+                                                                                                                class="product">
+                                                                                                                <img src=""
+                                                                                                                    alt="item 1">
+                                                                                                                <div class="name"
+                                                                                                                    product
+                                                                                                                    name>
+                                                                                                                </div>
+                                                                                                                <div
+                                                                                                                    class="price">
+                                                                                                                    $15.00
+                                                                                                                </div>
+                                                                                                            </div>
+
+                                                                                                            <div
+                                                                                                                class="product-container">
+                                                                                                                <div
+                                                                                                                    class="product">
+                                                                                                                    <img src=""
+                                                                                                                        alt="item 1">
+                                                                                                                    <div class="name"
+                                                                                                                        product
+                                                                                                                        name>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                        class="price">
+                                                                                                                        $15.00
+                                                                                                                    </div>
+                                                                                                                </div>
+
+                                                                                                                <div
+                                                                                                                    class="product-container">
+                                                                                                                    <div
+                                                                                                                        class="product">
+                                                                                                                        <img src=""
+                                                                                                                            alt="item 1">
+                                                                                                                        <div class="name"
+                                                                                                                            product
+                                                                                                                            name>
+                                                                                                                        </div>
+                                                                                                                        <div
+                                                                                                                            class="price">
+                                                                                                                            $15.00
+                                                                                                                        </div>
+                                                                                                                    </div>
+
+                                                                                                                    <div
+                                                                                                                        class="product-container">
+                                                                                                                        <div
+                                                                                                                            class="product">
+                                                                                                                            <img src=""
+                                                                                                                                alt="item 1">
+                                                                                                                            <div class="name"
+                                                                                                                                product
+                                                                                                                                name>
+                                                                                                                            </div>
+                                                                                                                            <div
+                                                                                                                                class="price">
+                                                                                                                                $15.00
+                                                                                                                            </div>
+                                                                                                                        </div>
+
+                                                                                                                        <div
+                                                                                                                            class="product-container">
+                                                                                                                            <div
+                                                                                                                                class="product">
+                                                                                                                                <img src=""
+                                                                                                                                    alt="item 1">
+                                                                                                                                <div class="name"
+                                                                                                                                    product
+                                                                                                                                    name>
+                                                                                                                                </div>
+                                                                                                                                <div
+                                                                                                                                    class="price">
+                                                                                                                                    $15.00
+                                                                                                                                </div>
+                                                                                                                            </div>
+
+                                                                                                                            <div
+                                                                                                                                class="product-container">
+                                                                                                                                <div
+                                                                                                                                    class="product">
+                                                                                                                                    <img src=""
+                                                                                                                                        alt="item 1">
+                                                                                                                                    <div class="name"
+                                                                                                                                        product
+                                                                                                                                        name>
+                                                                                                                                    </div>
+                                                                                                                                    <div
+                                                                                                                                        class="price">
+                                                                                                                                        $15.00
+                                                                                                                                    </div>
+                                                                                                                                </div>
+
+                                                                                                                                <div
+                                                                                                                                    class="product-container">
+                                                                                                                                    <div
+                                                                                                                                        class="product">
+                                                                                                                                        <img src=""
+                                                                                                                                            alt="item 1">
+                                                                                                                                        <div class="name"
+                                                                                                                                            product
+                                                                                                                                            name>
+                                                                                                                                        </div>
+                                                                                                                                        <div
+                                                                                                                                            class="price">
+                                                                                                                                            $15.00
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+
+
+
+                                                                                                                                    <footer>
+
+                                                                                                                                        <div
+                                                                                                                                            class="f1">
+                                                                                                                                            Our
+                                                                                                                                            customer's
+                                                                                                                                            satisfaction
+                                                                                                                                            is
+                                                                                                                                            our
+                                                                                                                                            top
+                                                                                                                                            priority
+                                                                                                                                        </div>
+                                                                                                                                    </footer>
+
+</body>
+
+</html>

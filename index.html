@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGM Portfolio</title>
+</head>
+<style>
+    @keyframes mymove {
+        from {
+            background-color: blue;
+        }
+
+        to {
+            background-color: navy;
+        }
+    }
+
+    body {
+        background-color: whitesmoke;
+        animation: mymove 1s linear infinite;
+    }
+
+    .menu-bar {
+        display: flex;
+        align-content: end;
+        margin-left: 85%;
+        height: auto;
+        width: 15%;
+        background-color: white;
+        color: black;
+        gap: 10px;
+    }
+
+    .box-container {
+        display: block;
+        color: white;
+        background-image: url('images/gemin desig inc png.png');
+        margin-top: 10%;
+        margin-left: 38%;
+        background-color: black;
+        height: 550px;
+        width: 450px;
+        border: solid 2px white;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .h1 {
+        display: flex;
+        color: white;
+        align-content: center;
+        margin-left: 4%;
+        font-size: larger;
+        font-style: oblique;
+        font-size: 7em;
+    }
+
+    .h2 {
+        display: flex;
+        color: white;
+        align-content: center;
+        margin-left: 40%;
+        font-size: 2em;
+
+    }
+
+    .h3 {
+        display: flex;
+        color: white;
+        align-content: center;
+        margin-left: 12%;
+        font-size: 7em;
+        font-style: oblique;
+    }
+
+    .button {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-wrap: no-wrap;
+        background-color: black;
+        margin-left: 40%;
+        border: 2px solid;
+        border-radius: 15%;
+        height: auto;
+        width: 20%;
+        color: white;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        opacity: 0.7;
+        color: green;
+        transition: 0.1ms;
+        cursor: pointer;
+    }
+
+    .f1 {
+        display: flex;
+        background-color: black;
+        font-style: italic;
+        font-size: larger;
+        color: white;
+        margin-top: 8%;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    @media only screen and(max-width:600px) {
+        .body {
+            background-color: white;
+        }
+
+        .menu-bar {
+            display: flex;
+            gap: 1px;
+            height: auto;
+            width: 100%;
+            background-color: white;
+            justify-content: center;
+            margin-left: 90%;
+        }
+
+         .box-container {
+            display: flex;
+            justify-items: center;
+            margin-top: 12%;
+            margin-right: -7%;
+
+        }
+
+        .button {
+            display: flex;
+            height: auto;
+            width: auto;
+            margin-left: 65%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer {
+            display: flex;
+            height: auto;
+            width: 50%;
+            color: white;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="menu-bar">
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="help.html">HELP</a></li>
+
+
+    </div>
+    <div class="box-container">
+        <div class="h1">Welcome</div>
+        <div class="h2">TO</div>
+        <div class="h3">SGM-portfolio</div>
+        <div class="image"></div>
+    </div>
+
+    <div class="button"><a href="homepage.html">ENTER</a>
+        <!--link button to homepage.html-->
+        <a href="homepage.html"></a>
+    </div>
+
+    <footer>
+
+        <div class="f1">Our customer's satisfaction is our top priority</div>
+    </footer>
+</body>
+
+</html>

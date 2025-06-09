@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <title>
+        Service page
+    </title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<style>
+    body{
+        background-color: navy;
+    }
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .service-card {
+        background: rgba(255,255,255,0.08);
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        padding: 30px 25px;
+        width: 320px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        color: #fff;
+        text-align: left;
+    }
+
+    .service-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    .service-card h2 {
+        margin-top: 0;
+        color: #ffd700;
+        font-size: 1.5em;
+    }
+
+    .service-card p {
+        font-size: 1.05em;
+        line-height: 1.6;
+    }
+
+    nav {
+        background-color: #222;
+        padding: 12px 0;
+        text-align: center;
+    }
+
+    nav a {
+        color: #ffd700;
+        text-decoration: none;
+        margin: 0 18px;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: color 0.2s;
+    }
+
+    nav a:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+        .services-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .service-card {
+            width: 90%;
+        }
+    }
+    
+      body {
+                background-color: navy;
+                color: white;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: black;
+                padding: 20px;
+                text-align: center;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+
+            main {
+                padding: 20px;
+                text-align: center;
+            }
+
+            footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+
+            .f1 {
+                font-style: italic;
+                font-size: larger;
+            }
+
+</style>
+
+<body>
+    <header>
+        <h1>Our Services</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <div class="services-container">
+            <div class="service-card">
+                <h2>Web Development</h2>
+                <p>We build responsive and modern websites tailored to your business needs, ensuring a seamless user experience across all devices.</p>
+            </div>
+            <div class="service-card">
+                <h2>UI/UX Design</h2>
+                <p>Our design team crafts intuitive interfaces and engaging user experiences to help your brand stand out in the digital world.</p>
+            </div>
+            <div class="service-card">
+                <h2>SEO Optimization</h2>
+                <p>Boost your online presence and reach more customers with our expert SEO strategies and content optimization services.</p>
+            </div>
+        </div>
+    </main>
+<footer>
+
+    <div class="f1">Our customer's satisfaction is our top priority</div>
+</footer>
+
+</body>
+
+</html>
