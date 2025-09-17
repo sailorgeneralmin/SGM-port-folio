@@ -58,6 +58,15 @@
           padding: 0;
      }
 
+     .h6 {
+          display: flex;
+          text-align: center;
+          color: #128c7e;
+          font-size: large;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          background-color: #222;
+     }
+
      .navbar {
           display: flex;
           margin: 0;
@@ -196,8 +205,8 @@
      .ads-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-          gap: 32px;
-          max-width: 1100px;
+          gap: 25px;
+          max-width: 1710px;
           margin: 0 auto;
           padding: 0 20px;
      }
@@ -278,8 +287,18 @@
 
      }
 
+     .box-container {
+          display: flex;
+          border: none height: 100px;
+          
+          width: 30%;
+          margin-right: 20px;
+     }
+
+
      footer {
           background: #222;
+          position: relative;
           color: #fff;
           text-align: center;
           padding: 18px 0;
@@ -299,7 +318,7 @@
           }
 
           .ads-grid {
-               gap: 20px;
+               gap: 15px;
           }
      }
 
@@ -308,6 +327,15 @@
                flex-direction: row;
                gap: 25px;
                padding: 14px 0;
+          }
+
+          .h6 {
+               display: flex;
+               text-align: center;
+               color: #128c7e;
+               font-size: large;
+               font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+               background-color: #222;
           }
 
           .hero {
@@ -354,6 +382,32 @@
           .hero-content h1 {
                font-size: 1.5rem;
           }
+
+          box-container {
+               display: block;
+               height: auto;
+               width: auto;
+          }
+
+          f1 {
+               display: flex;
+               margin-left: 75px;
+               position: relative;
+               text-decoration: none;
+               text-align: center;
+               color: white;
+               font-size: large;
+               font-style: italic;
+          }
+
+          .box-container {
+               display: flex;
+               border: none height: 100px;
+               margin-bottom: 15px;
+               width: 55%;
+               margin-right: 20px;
+          }
+
      }
 </style>
 
@@ -368,6 +422,11 @@
                </ul>
           </nav>
      </header>
+
+
+     <div class="h6">
+          <marquee>.......Refer SGM and earn today!!! earn 2% for a referral and a executed job earn 5%.</marquee>
+     </div>
 
      <section class="hero">
           <div class="hero-content"></div>
@@ -404,8 +463,9 @@
                               <li>Community support & fun activities</li>
                          </ul>
                     </div>
-                    <a href="https://chat.whatsapp.com/LSPipz7lBdDClFJeBGso9I"><button>Join us !</button>
+                    <a href="https://chat.whatsapp.com/LSPipz7lBdDClFJeBGso9I"> <button> Join us!</button>
                </div>
+
                <div class="ad-card">
                     <img src="images/sgm lgtics mover flyer.png" alt="SGM Movers" class="ad-img">
                     <div class="ad-content">
@@ -414,35 +474,72 @@
                               professionalism. Real-time tracking, secure handling, and tailored solutions for every
                               delivery.
                          </p><br>
-                         <a href="http://wa.me/2349058718721"><button> Chat us !</button>
+                         <a href="http://wa.me/2349058718721"><button> Chat us!</button>
                     </div>
 
-               </div>
-               <div class="ad-card">
-                    <img src="images/GEMIN PNG IMAGE FIYER.png" alt="Gemin Design" class="ad-img">
-                    <div class="ad-content">
-                         <h4>Gemin Design</h4>
-                         <p>Creative solutions for your brand. Let’s bring your ideas to life!</p>
+
+                    <div class="ad-card">
+                         <img src="images/GEMIN PNG IMAGE FIYER.png" alt="Gemin Design" class="ad-img">
+                         <div class="ad-content">
+                              <h4>Gemin Design</h4>
+                              <p>Creative solutions for your brand. Let’s bring your ideas to life!</p>
+                         </div>
+                         <a href=""><button>Book now !</button>
                     </div>
-                    <a href=""><button>Book now !</button>
-               </div>
-               <div class="ad-card">
-                    <img src="images/ella's treat nw flyers.png" alt="Ella's Treat" class="ad-img">
-                    <div class="ad-content">
-                         <h4>Ella's Treat</h4>
-                         <p>Delicious treats for every occasion. Book your ad space today!</p>
+
+                    <div class="ad-card">
+                         <img src="images/ella's treat nw flyers.png" alt="Ella's Treat" class="ad-img">
+                         <div class="ad-content">
+                              <h4>Ella's Treat</h4>
+                              <p>Delicious treats for every occasion. Book your ad space today!</p>
+                         </div>
+                         <a href="http://wa.me/2347044500886"><button>Book now!</button>
                     </div>
-                    <a href="http://wa.me/2347044500886"><button>Book now !</button>
-               </div>
-          </div>
+
+                    <div class="ad-card">
+                         <img src="g" alt="SGM Movers" class="ad-img">
+                         <div class="ad-content">
+                              <h4>ads space</h4>
+                              <p>let advertise your business today
+                              </p><br>
+                              <a href="http://wa.me/2349058718721"><button> Chat us!</button>
+                         </div>
+
+                         <div class="ad-card">
+                              <img src="" alt="SGM Movers" class="ad-img">
+                              <div class="ad-content">
+                                   <h4>ads space</h4>
+                                   <p>let advertise your business today
+                                   </p><br>
+                                   <a href="http://wa.me/2349058718721"><button> Chat us!</button>
+                              </div>
+
+                              <div class="ad-card">
+                                   <img src="" alt="SGM Movers" class="ad-img">
+                                   <div class="ad-content">
+                                        <h4>ads space</h4>
+                                        <p>let advertise your business today
+                                        </p><br>
+                                        <a href="http://wa.me/2349058718721"><button> Chat us!</button>
+                                   </div>
+                              </div>
      </section>
+
+     <div class="box-container">
+          <img src="images/my barcode(sgm).png" alt="Scan barcode to drop a review, Feedback or complaint..."
+               height="190px" width="50%">
+     </div>
+     <div>
+          <p class="f2"> Scan barcode to drop a review, Feedback or complaint...</p>
+     </div>
 
      <footer>
           <div class="f1">Our customer's satisfaction is our top priority</div>
      </footer>
-</body>
 
-<script<a href="script.js">
-</script>
+
+     <script src="script.js">
+     </script>
+</body>
 
 </html>
