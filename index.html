@@ -39,6 +39,7 @@
      html,
      body {
           height: 100%;
+          width: 100%;
           font-family: 'Segoe UI', Arial, sans-serif;
           background: url("images/Mexican-background.jpg") center/cover no-repeat;
           color: #222;
@@ -61,7 +62,7 @@
      .h6 {
           display: flex;
           text-align: center;
-          color: #128c7e;
+          color: white;
           font-size: large;
           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
           background-color: #222;
@@ -287,18 +288,30 @@
 
      }
 
-     .box-container {
+     .bar-code {
+          display: block;
+          margin-top: 20px;
+          margin-right: 455%;
+
+     }
+
+     .footer {
+          width: 100%;
+          padding: 5%;
+     }
+
+     .f1 {
           display: flex;
-          border: none height: 100px;
-          
-          width: 30%;
-          margin-right: 20px;
+          width: 200%;
+          color: blue;
      }
 
 
+
      footer {
+          display: flex;
           background: #222;
-          position: relative;
+          position: absolute;
           color: #fff;
           text-align: center;
           padding: 18px 0;
@@ -318,7 +331,7 @@
           }
 
           .ads-grid {
-               gap: 15px;
+               gap: 28px;
           }
      }
 
@@ -332,7 +345,7 @@
           .h6 {
                display: flex;
                text-align: center;
-               color: #128c7e;
+               color: white;
                font-size: large;
                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                background-color: #222;
@@ -383,30 +396,26 @@
                font-size: 1.5rem;
           }
 
-          box-container {
+          .bar-code {
                display: block;
-               height: auto;
-               width: auto;
+               margin-top: 9px;
+               margin-right: 118px;
+
           }
 
-          f1 {
+          .f1 {
                display: flex;
                margin-left: 75px;
                position: relative;
                text-decoration: none;
+               text-wrap: no-wrap;
                text-align: center;
                color: white;
                font-size: large;
                font-style: italic;
           }
 
-          .box-container {
-               display: flex;
-               border: none height: 100px;
-               margin-bottom: 15px;
-               width: 55%;
-               margin-right: 20px;
-          }
+
 
      }
 </style>
@@ -452,94 +461,56 @@
      </section>
 
      <section class="ads-section">
-          <div class="ads-grid">
+
+
+          <div class="ad-card">
+               <img src="images/sgm lgtics mover flyer.png" alt="SGM Movers" class="ad-img">
+               <div class="ad-content">
+                    <h4>Welcome to SGM Movers</h4>
+                    <p>Your Trusted Logistics Partner. <br>We deliver excellence with reliability, efficiency, and
+                         professionalism. <br>Real-time tracking, secure handling,<br> and tailored solutions for every
+                         delivery.
+                    </p><br>
+                    <a href="http://wa.me/2349058718721"><button> Chat us!</button>
+               </div>
+
+
                <div class="ad-card">
-                    <img src="images/true love logo 1.jpg" alt="True Love Unites" class="ad-img">
+                    <img src="images/GEMIN PNG IMAGE FIYER.png" alt="Gemin Design" class="ad-img">
                     <div class="ad-content">
-                         <h4>🌴🍀 TRUE Love Unites 🌴🍀</h4>
-                         <ul>
-                              <li>Meet, Network, Hangout, Support</li>
-                              <li>Building connections & relationships</li>
-                              <li>Community support & fun activities</li>
-                         </ul>
-                    </div>
-                    <a href="https://chat.whatsapp.com/LSPipz7lBdDClFJeBGso9I"> <button> Join us!</button>
+                         <h4>Gemin Design</h4>
+                         <p>Creative solutions for your brand. Let’s bring your ideas to life!</p>
+                    </div><br>
+                    <a href=""><button>Book now !</button>
                </div>
 
                <div class="ad-card">
-                    <img src="images/sgm lgtics mover flyer.png" alt="SGM Movers" class="ad-img">
+                    <img src="images/abzab herbs.jpg" alt="Abzab Herbs and TC" class="ad-img">
                     <div class="ad-content">
-                         <h4>Welcome to SGM Movers</h4>
-                         <p>Your Trusted Logistics Partner. We deliver excellence with reliability, efficiency, and
-                              professionalism. Real-time tracking, secure handling, and tailored solutions for every
-                              delivery.
-                         </p><br>
-                         <a href="http://wa.me/2349058718721"><button> Chat us!</button>
+                         <h4>Abzab Herbs and TC<br> bringing health, Growing happiness</h4>
+                         <p>We sell herbs for all kind of sickness <br> You can click the link and get<br> responded to
+                              by a specialist.</p>
                     </div>
 
+                    <a href="http://wa.link/0vd9ez"><button>Book now!</button>
+               </div>
 
-                    <div class="ad-card">
-                         <img src="images/GEMIN PNG IMAGE FIYER.png" alt="Gemin Design" class="ad-img">
-                         <div class="ad-content">
-                              <h4>Gemin Design</h4>
-                              <p>Creative solutions for your brand. Let’s bring your ideas to life!</p>
-                         </div>
-                         <a href=""><button>Book now !</button>
-                    </div>
-
-                    <div class="ad-card">
-                         <img src="images/ella's treat nw flyers.png" alt="Ella's Treat" class="ad-img">
-                         <div class="ad-content">
-                              <h4>Ella's Treat</h4>
-                              <p>Delicious treats for every occasion. Book your ad space today!</p>
-                         </div>
-                         <a href="http://wa.me/2347044500886"><button>Book now!</button>
-                    </div>
-
-                    <div class="ad-card">
-                         <img src="g" alt="SGM Movers" class="ad-img">
-                         <div class="ad-content">
-                              <h4>ads space</h4>
-                              <p>let advertise your business today
-                              </p><br>
-                              <a href="http://wa.me/2349058718721"><button> Chat us!</button>
-                         </div>
-
-                         <div class="ad-card">
-                              <img src="" alt="SGM Movers" class="ad-img">
-                              <div class="ad-content">
-                                   <h4>ads space</h4>
-                                   <p>let advertise your business today
-                                   </p><br>
-                                   <a href="http://wa.me/2349058718721"><button> Chat us!</button>
-                              </div>
-
-                              <div class="ad-card">
-                                   <img src="" alt="SGM Movers" class="ad-img">
-                                   <div class="ad-content">
-                                        <h4>ads space</h4>
-                                        <p>let advertise your business today
-                                        </p><br>
-                                        <a href="http://wa.me/2349058718721"><button> Chat us!</button>
-                                   </div>
-                              </div>
-     </section>
-
-     <div class="box-container">
-          <img src="images/my barcode(sgm).png" alt="Scan barcode to drop a review, Feedback or complaint..."
-               height="190px" width="50%">
-     </div>
-     <div>
-          <p class="f2"> Scan barcode to drop a review, Feedback or complaint...</p>
-     </div>
-
-     <footer>
-          <div class="f1">Our customer's satisfaction is our top priority</div>
-     </footer>
+               <section class="bar-code"
+                    style="display: flex; flex-direction: column; align-items:start; margin: 40px 0; margin-left: -22%;">
+                    <img src="images/my barcode(sgm).png" alt="Scan barcode"
+                         style="height: 190px; width: 60%; max-width: 240px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <p class="f2" style="margin-top: 12px; color: #222; font-size: 1rem; text-align: center;">
+                         Scan barcode to drop a review, feedback or complaint...
+                    </p>
+               </section>
 
 
-     <script src="script.js">
-     </script>
+               <footer>
+                    <div class="f1"> Our customer's satisfaction is our top priority</div>
+               </footer>
+
+               <script src="script.js">
+               </script>
 </body>
 
 </html>
